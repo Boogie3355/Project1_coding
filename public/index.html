@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerAI - Career Assessment Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="error-message" style="display: none; position: fixed; top: 20px; right: 20px; background: #ff4444; color: white; padding: 1rem; border-radius: 4px; z-index: 1001;"></div>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                CareerAI
+            </div>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#assessment"><i class="fas fa-tasks"></i> Assessment</a></li>
+                <li><a href="#jobs"><i class="fas fa-briefcase"></i> Jobs</a></li>
+                <li><a href="#learning"><i class="fas fa-graduation-cap"></i> Learning</a></li>
+                <li><a href="#practice"><i class="fas fa-code"></i> Practice</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="active-section">
+            <h1>Welcome to CareerAI</h1>
+            <p class="subtitle">Discover your perfect career path with AI-powered guidance</p>
+            <div class="features">
+                <div class="feature-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI-Powered Analysis</h3>
+                    <p>Get personalized career recommendations based on your skills and preferences</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Skills Assessment</h3>
+                    <p>Evaluate your current skills and identify areas for growth</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-road"></i>
+                    <h3>Learning Path</h3>
+                    <p>Get a customized learning roadmap to achieve your career goals</p>
+                </div>
+            </div>
+            <button id="startAssessment" class="cta-button">
+                <i class="fas fa-play"></i> Start Career Assessment
+            </button>
+        </section>
+
+        <section id="assessment" class="hidden">
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 0%"></div>
+            </div>
+            <h2>Career Assessment</h2>
+            <div id="questionContainer">
+                <!-- Questions will be dynamically loaded here -->
+            </div>
+            <button id="submitAssessment" class="hidden">
+                <i class="fas fa-check"></i> Submit Assessment
+            </button>
+        </section>
+
+        <section id="jobs" class="hidden">
+            <h2>Recommended Jobs</h2>
+            <div class="filters">
+                <select id="industryFilter">
+                    <option value="">All Industries</option>
+                    <option value="tech">Technology</option>
+                    <option value="finance">Finance</option>
+                    <option value="healthcare">Healthcare</option>
+                </select>
+                <select id="experienceFilter">
+                    <option value="">All Experience Levels</option>
+                    <option value="entry">Entry Level</option>
+                    <option value="mid">Mid Level</option>
+                    <option value="senior">Senior Level</option>
+                </select>
+            </div>
+            <div id="jobsContainer">
+                <!-- Job recommendations will be loaded here -->
+            </div>
+        </section>
+
+        <section id="learning" class="hidden">
+            <h2>Your Learning Path</h2>
+            <div id="learningContainer">
+                <!-- Learning recommendations will be loaded here -->
+            </div>
+        </section>
+
+        <section id="practice" class="hidden">
+            <h2>Practice Problems</h2>
+            <div class="problem-filters">
+                <select id="difficultyFilter">
+                    <option value="">All Difficulties</option>
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                </select>
+                <select id="categoryFilter">
+                    <option value="">All Categories</option>
+                    <option value="Arrays">Arrays</option>
+                    <option value="Strings">Strings</option>
+                    <option value="Linked Lists">Linked Lists</option>
+                    <option value="Trees">Trees</option>
+                    <option value="Stacks">Stacks</option>
+                </select>
+            </div>
+            <div id="problemsContainer" class="problems-grid">
+                <!-- Problems will be loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CareerAI Platform | <a href="#">Terms</a> | <a href="#">Privacy</a></p>
+    </footer>
+
+    <div id="problem-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="problem-details">
+                    <div id="modal-description"></div>
+                    <div id="modal-examples"></div>
+                </div>
+                <div class="coding-area">
+                    <div class="editor-header">
+                        <select id="language-select">
+                            <option value="javascript">JavaScript</option>
+                            <option value="python">Python</option>
+                            <option value="java">Java</option>
+                            <option value="cpp">C++</option>
+                        </select>
+                    </div>
+                    <div class="editor-container">
+                        <textarea id="code-editor" spellcheck="false"></textarea>
+                    </div>
+                    <div class="button-group">
+                        <button id="run-code"><i class="fas fa-play"></i> Run Code</button>
+                        <button id="submit-solution"><i class="fas fa-check"></i> Submit</button>
+                    </div>
+                </div>
+                <div id="output-area" class="hidden">
+                    <h3>Output:</h3>
+                    <pre id="code-output"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

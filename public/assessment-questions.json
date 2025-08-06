@@ -1,0 +1,391 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "category": "Technical Skills",
+            "question": "Which programming language are you most proficient in?",
+            "options": [
+                "Python",
+                "JavaScript",
+                "Java",
+                "C++"
+            ]
+        },
+        {
+            "id": 2,
+            "category": "Problem Solving",
+            "question": "Given an array of integers, how would you find duplicate numbers?",
+            "options": [
+                "Using nested loops",
+                "Using hash set",
+                "Sorting and comparing",
+                "Using frequency array"
+            ]
+        },
+        {
+            "id": 3,
+            "category": "Data Structures",
+            "question": "Which data structure would you use to implement a cache with O(1) access time?",
+            "options": [
+                "Hash Map",
+                "Binary Tree",
+                "Linked List",
+                "Array"
+            ]
+        },
+        {
+            "id": 4,
+            "category": "Algorithms",
+            "question": "What's the time complexity of quicksort in average case?",
+            "options": [
+                "O(n log n)",
+                "O(n²)",
+                "O(n)",
+                "O(log n)"
+            ]
+        },
+        {
+            "id": 5,
+            "category": "System Design",
+            "question": "How would you design a URL shortening service?",
+            "options": [
+                "Using hash function and database",
+                "Using incremental IDs",
+                "Using random string generation",
+                "Using base62 conversion"
+            ]
+        },
+        {
+            "id": 6,
+            "category": "Database",
+            "question": "Which type of index would you use for range queries?",
+            "options": [
+                "B-tree index",
+                "Hash index",
+                "Bitmap index",
+                "Full-text index"
+            ]
+        },
+        {
+            "id": 7,
+            "category": "Web Development",
+            "question": "What's the best way to handle authentication in a REST API?",
+            "options": [
+                "JWT tokens",
+                "Session cookies",
+                "Basic auth",
+                "OAuth 2.0"
+            ]
+        },
+        {
+            "id": 8,
+            "category": "Security",
+            "question": "How would you prevent SQL injection attacks?",
+            "options": [
+                "Using prepared statements",
+                "Input validation",
+                "Escaping special characters",
+                "All of the above"
+            ]
+        },
+        {
+            "id": 9,
+            "category": "Testing",
+            "question": "Which testing approach follows the pyramid model?",
+            "options": [
+                "Unit tests at base, Integration in middle, UI at top",
+                "UI tests at base, Integration in middle, Unit at top",
+                "Integration at base, Unit in middle, UI at top",
+                "No specific order"
+            ]
+        },
+        {
+            "id": 10,
+            "category": "DevOps",
+            "question": "What's the main benefit of containerization?",
+            "options": [
+                "Consistent environment across stages",
+                "Faster deployment",
+                "Resource isolation",
+                "Easy scaling"
+            ]
+        },
+        {
+            "id": 11,
+            "category": "Cloud Computing",
+            "question": "Which AWS service would you use for serverless computing?",
+            "options": [
+                "Lambda",
+                "EC2",
+                "ECS",
+                "Elastic Beanstalk"
+            ]
+        },
+        {
+            "id": 12,
+            "category": "Mobile Development",
+            "question": "What's the best approach for handling state in React Native?",
+            "options": [
+                "Redux",
+                "Context API",
+                "MobX",
+                "Local state"
+            ]
+        },
+        {
+            "id": 13,
+            "category": "Machine Learning",
+            "question": "Which algorithm would you use for classification problems?",
+            "options": [
+                "Random Forest",
+                "Linear Regression",
+                "K-means",
+                "PCA"
+            ]
+        },
+        {
+            "id": 14,
+            "category": "Data Analysis",
+            "question": "What's the best tool for big data processing?",
+            "options": [
+                "Apache Spark",
+                "Pandas",
+                "Excel",
+                "MySQL"
+            ]
+        },
+        {
+            "id": 15,
+            "category": "Version Control",
+            "question": "How do you handle merge conflicts in Git?",
+            "options": [
+                "Manual resolution",
+                "Using merge tool",
+                "Stash and apply",
+                "Reset and pull"
+            ]
+        },
+        {
+            "id": 16,
+            "category": "Code Quality",
+            "question": "Which principle helps in achieving loose coupling?",
+            "options": [
+                "Dependency Injection",
+                "Inheritance",
+                "Encapsulation",
+                "Polymorphism"
+            ]
+        },
+        {
+            "id": 17,
+            "category": "Frontend",
+            "question": "What's the best way to manage component state in React?",
+            "options": [
+                "Hooks",
+                "Class components",
+                "Redux",
+                "Context"
+            ]
+        },
+        {
+            "id": 18,
+            "category": "Backend",
+            "question": "Which pattern would you use for event-driven architecture?",
+            "options": [
+                "Publisher-Subscriber",
+                "MVC",
+                "Repository",
+                "Factory"
+            ]
+        },
+        {
+            "id": 19,
+            "category": "API Design",
+            "question": "What's the best practice for versioning APIs?",
+            "options": [
+                "URL versioning",
+                "Header versioning",
+                "Content negotiation",
+                "Query parameter"
+            ]
+        },
+        {
+            "id": 20,
+            "category": "Performance",
+            "question": "How would you optimize website loading time?",
+            "options": [
+                "Code splitting and lazy loading",
+                "Image optimization",
+                "Caching",
+                "All of the above"
+            ]
+        },
+        {
+            "id": 21,
+            "category": "Debugging",
+            "question": "What's your preferred method for debugging memory leaks?",
+            "options": [
+                "Chrome DevTools Memory panel",
+                "Console logging",
+                "Performance profiler",
+                "Code review"
+            ]
+        },
+        {
+            "id": 22,
+            "category": "Architecture",
+            "question": "Which architectural pattern is best for microservices?",
+            "options": [
+                "API Gateway",
+                "Monolithic",
+                "Layered",
+                "MVC"
+            ]
+        },
+        {
+            "id": 23,
+            "category": "Soft Skills",
+            "question": "How do you handle disagreements in code reviews?",
+            "options": [
+                "Discuss with data and examples",
+                "Follow team lead's decision",
+                "Stick to your approach",
+                "Avoid conflicts"
+            ]
+        },
+        {
+            "id": 24,
+            "category": "Project Management",
+            "question": "Which agile ceremony is most important?",
+            "options": [
+                "Daily standup",
+                "Sprint planning",
+                "Retrospective",
+                "Sprint review"
+            ]
+        },
+        {
+            "id": 25,
+            "category": "Code Organization",
+            "question": "How do you structure large React applications?",
+            "options": [
+                "Feature-based",
+                "Type-based",
+                "Flat structure",
+                "MVC pattern"
+            ]
+        }
+    ],
+    "practiceProblems": [
+        {
+            "id": "p1",
+            "title": "Two Sum",
+            "difficulty": "Easy",
+            "category": "Arrays",
+            "description": "Given an array of integers nums and an integer target, return indices of the two numbers in nums such that they add up to target. You may assume that each input would have exactly one solution.",
+            "examples": [
+                {
+                    "input": "[2,7,11,15], 9",
+                    "output": "[0,1]"
+                }
+            ],
+            "testCases": [
+                {
+                    "input": "[3,2,4], 6",
+                    "output": "[1,2]"
+                },
+                {
+                    "input": "[3,3], 6",
+                    "output": "[0,1]"
+                },
+                {
+                    "input": "[1,2,3,4,5], 9",
+                    "output": "[3,4]"
+                }
+            ],
+            "starterCode": {
+                "javascript": "function twoSum(nums, target) {\n    // Write your code here\n}"
+            }
+        },
+        {
+            "id": "p2",
+            "title": "Valid Parentheses",
+            "difficulty": "Easy",
+            "category": "Stacks",
+            "description": "Determine if a string of parentheses is valid.",
+            "examples": [
+                {
+                    "input": ["()[]{}"],
+                    "output": "true"
+                }
+            ],
+            "testCases": [
+                {
+                    "input": ["(]"],
+                    "output": "false"
+                },
+                {
+                    "input": ["([)]"],
+                    "output": "false"
+                },
+                {
+                    "input": ["{[]}"],
+                    "output": "true"
+                }
+            ]
+        },
+        {
+            "id": "p3",
+            "title": "Reverse Linked List",
+            "difficulty": "Medium",
+            "category": "Linked Lists",
+            "description": "Reverse a singly linked list.",
+            "examples": [
+                {
+                    "input": ["1->2->3->4->5"],
+                    "output": "[5,4,3,2,1]"
+                }
+            ],
+            "testCases": [
+                {
+                    "input": ["1->2"],
+                    "output": "[2,1]"
+                },
+                {
+                    "input": ["1"],
+                    "output": "[1]"
+                },
+                {
+                    "input": ["1->2->3"],
+                    "output": "[3,2,1]"
+                }
+            ]
+        },
+        {
+            "id": "p4",
+            "title": "Binary Tree Level Order Traversal",
+            "difficulty": "Medium",
+            "category": "Trees",
+            "description": "Return the level order traversal of a binary tree's nodes' values.",
+            "examples": [
+                {
+                    "input": "[3,9,20,null,null,15,7]",
+                    "output": "[[3],[9,20],[15,7]]"
+                }
+            ]
+        },
+        {
+            "id": "p5",
+            "title": "Maximum Subarray",
+            "difficulty": "Easy",
+            "category": "Arrays",
+            "description": "Find the contiguous subarray with the largest sum.",
+            "examples": [
+                {
+                    "input": "[-2,1,-3,4,-1,2,1,-5,4]",
+                    "output": "6"
+                }
+            ]
+        }
+    ]
+} 
